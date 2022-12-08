@@ -18,6 +18,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
   return true;
 }
 
+void matrix_scan_user(void) {
+  achordion_task();
+}
+
 #define _LAYER0 0
 #define _LAYER1 1
 
