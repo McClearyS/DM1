@@ -4,6 +4,10 @@ MCU = atmega32u4
 # Bootloader selection
 BOOTLOADER = caterina
 
+
+SRC += features/autocorrection.c
+
+
 # Build Options
 #   change yes to no to disable
 #
