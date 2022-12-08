@@ -6,18 +6,9 @@
 
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
   if (!process_achordion(keycode, record)) { return false; }
-  // Your macros ...
-
-  return true;
-}
-
-bool process_record_user(uint16_t keycode, keyrecord_t* record) {
   if (!process_autocorrection(keycode, record)) { return false; }
-  // Your macros...
-
   return true;
 }
-
 
 #define _LAYER0 0
 #define _LAYER1 1
