@@ -17,7 +17,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define MASTER_LEFT
-//#define MASTER_RIGHT
+#include "config_common.h"
 
-//#define EE_HANDS
+/* key matrix size */
+// Rows are doubled-up
+#define MATRIX_ROWS 12
+#define MATRIX_COLS 6
+
+
+// wiring of each half
+#define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
+#define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
+
+#define DIODE_DIRECTION COL2ROW
+#define SOFT_SERIAL_PIN D0
+#define USE_SERIAL
+#define USB_MAX_POWER_CONSUMPTION 500
+
+#define MASTER_RIGHT
+
