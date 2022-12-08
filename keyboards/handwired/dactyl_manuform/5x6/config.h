@@ -30,13 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
 
 #define DIODE_DIRECTION COL2ROW
+#define SOFT_SERIAL_PIN D0
+#define USB_MAX_POWER_CONSUMPTION 500
 
-// WS2812 RGB LED strip input and number of LEDs
-#define RGB_DI_PIN D3
-#define RGBLED_NUM 12
-
-/* define if matrix has ghost */
-//#define MATRIX_HAS_GHOST
-
-/* number of backlight levels */
-// #define BACKLIGHT_LEVELS 3
+#define MASTER_RIGHT
